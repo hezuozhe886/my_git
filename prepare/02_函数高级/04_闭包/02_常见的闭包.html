@@ -11,7 +11,7 @@
 2. 将函数作为实参传递给另一个函数调用
 -->
 <script type="text/javascript">
-  // 1. 将函数作为另一个函数的返回值
+  // 1. 将函数作为另一个函数的返回值---外部保存
   function fn1() {
     var a = 2
 
@@ -26,7 +26,7 @@
   f() // 3
   f() // 4
 
-  // 2. 将函数作为实参传递给另一个函数调用
+  // 2. 将函数作为实参传递给另一个函数调用---自身保存
   function showMsgDelay(msg, time) {
     setTimeout(function () {
       console.log(msg)
